@@ -1,86 +1,225 @@
-# curriculum-tools-copy-projects
+<a name="readme-top"></a>
 
-The bash script stored in this repo will help you to quickly copy [GitHub project boards](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards) with associated issues.
-It will be useful for the Microverse group projects that should be based on project board templates prepared by Microverse.
+<div align="center">
 
+  <h3><b>MEALS</b></h3>
 
-## Getting Started
+</div>
 
-In order to successfully copy a given project board, you need to follow the below steps.
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [Capstone Meal API] <a name="about-project"></a>
+
+**[Meals API]** This project is basic website that display meals from an API, display their instructions, and allow usee to add comment and likes.
+
+## 🛠 Built With <a name="HTML, CSS, Javascript, Jest and Webpack"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://html.com/#What_is_HTML">"HTML"</a></li>
+    <li><a href="https://html.com/css/#What_is_CSS">"CSS"</a></li>
+    <li><a href="https://www.javascript.com/">"script.Javascript"</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- [x] Use JavaScript to make websites dynamic and build basic single page apps.
+- [x] Use ES6 syntax and modules, callbacks and promises.
+- [x] Used webpack technology.
+- [x] Follow Gitflow.
+- [x] Send and receive data from an API.
+- [x] Make JavaScript code asynchronous.
+- [x] Write units tests for a JavaScript app.
+- [x] Use AAA pattern for unit tests.
+- [x] Used Jest for implementing tests.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [CLive](https://citec-47.github.io/MEALS-API/dist/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-1. Initialize an empty repository for your group project.
+In order to run this project you need:
+Open terminal on the same folder of the project and run:
 
-2. Manually [copy project board (only empty columns)](https://docs.github.com/en/github/managing-your-work-on-github/copying-a-project-board) from a specific template to your own repo. **IMPORTANT NOTE: do not copy cards manually, this tool will do it for you in a few seconds.**
-    - [[TEMPLATE] JavaScript Group Capstone](https://github.com/microverseinc/curriculum-javascript/projects/1)
-    - [[TEMPLATE] React Group Project](https://github.com/microverseinc/curriculum-react-redux/projects/1)
-    - [[TEMPLATE] Ruby Group Capstone Project](https://github.com/microverseinc/curriculum-ruby/projects/1)
+```sh
+ npm install
+```
 
-3. Install [jq](https://stedolan.github.io/jq/download/).
-    - OS X
-    ``` bash
-        brew install jq
-    ```
-     - Linux
-    ``` bash
-        sudo apt-get install jq
-    ```
-     - Windows - **run your windows CMD as an administrator**
-          ``` bash
-              choco install jq
-          ```
-          - if you do not have chocolately installed follow [this guide](https://www.liquidweb.com/kb/how-to-install-chocolatey-on-windows/)
-          - thanks to courtesy of [Lucas Erkana](https://github.com/Lucash2022) you can see how the whole process should look like on Windows [in this video](https://www.loom.com/share/8cd5e493f0ca4a9ab90989e2ca1ceb3c)
+### Setup
 
-4. Generate [personal access token for GitHub API](https://github.com/settings/tokens/new?scopes=repo).
+Clone this repository to your desired folder:
+
+```sh
+  git https://github.com/adeola003/Javascript_Capstone_project.git
+  cd Javascript_Capstone_project
+
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  npm install
+```
 
 ### Usage
 
-1. Clone this repository.
-2. Open terminal.
-3. Navigate to the cloned repo dir.
-     ``` bash
-         cd curriculum-tools-copy-projects
-     ```
-4. Run script with correct input parameters
-     ``` bash
-         sh copy_github_board.sh <YOUR_GITHUB_AUTH_TOKEN> <SOURCE_GITHUB_USERNAME> <SOURCE_REPO_NAME> <YOUR_GITHUB_USERNAME> <YOUR_GROUP_PROJECT_REPO_NAME> 
-     ```
-     
-     🐛 _In case of errors, try to use:_
-     ``` bash
-         bash copy_github_board.sh <YOUR_GITHUB_AUTH_TOKEN> <SOURCE_GITHUB_USERNAME> <SOURCE_REPO_NAME> <YOUR_GITHUB_USERNAME> <YOUR_GROUP_PROJECT_REPO_NAME> 
-     ```
-     
-    - for example, in case of the JavaScript Group Capstone, you should use:
-
-     ``` bash
-         sh copy_github_board.sh <YOUR_GITHUB_AUTH_TOKEN> microverseinc curriculum-javascript <YOUR_GITHUB_USERNAME> <YOUR_GROUP_PROJECT_REPO_NAME> 
-     ```
-5. Verify that the template project board and your board look exactly the same.
-
-### Troubleshooting
-
-When trying to use the .sh file to copy the kanban board to your repository, youmight see unexpected errors appeared such as this one:
-
-```bash
-jq: error (at :4): Cannot index string with string "id"
+```
+1. download the project from clone
+2. open live server for the project
+3. You can see it in the browser
 ```
 
-To fix it locally you need to createa new personal access token with permission to access and manage your repositories.
+### Build for production
 
+```
+npm run build
+```
 
-## 🤝 Contributing
+### Run tests
+
+- ### Linter Tests
+
+To run tests, run the following command:
+
+To check for html errors run:
+
+```sh
+  npx hint .
+```
+
+To check for css errors run:
+
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+
+To check for js errors run:
+
+```sh
+  npx eslint .
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Abdel-Khafid SALAOU**
+
+- GitHub: [@githubhandle](https://github.com/adeola003)
+- Twitter: [@twitterhandle](https://twitter.com/khadaf6)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdel-khafid-salaou-a18396161)
+
+👤 **Ndonyi Maurice Djam**
+
+- GitHub: [NdonyiMaurice](https://github.com/citec-47)
+- Twitter: [@NdonyiMaurice](https://twitter.com/Ndonyi4)
+- LinkedIn: [NdonyiMaurice](https://www.linkedin.com/in/ndonyi-maurice-b5b49b22b/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [x] Add test to the project using jest
+- [x] Add the live demo for the project
+- [x] Add new some features to the project
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issue page](https://github.com/adeola003/Javascript_Capstone_project/issues).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-This script is based on the [How to copy project cards on GitHub](https://blog.termian.dev/posts/project-cards-copy-github/) by Damian Terlecki.
+If you like this feel free to follow me on github and give this project a star..
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to my partners for this stunning collab.
+- Thanks to the Code Reviewers for the insightful feedbacks.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **[How_to_start]**
+
+  - [Register_for_a_full_stack_program_like_Microverse]
+
+- **[How_to_contact_you]**
+
+  - [Follow_me_on_Github]
+ -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
